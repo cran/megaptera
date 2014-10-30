@@ -1,0 +1,14 @@
+exportPattern("^[[:alpha:]]+")
+
+import(ape)
+importFrom(ips, deleteEmptyCells, trimEnds, mafft, gblocks, 
+           write.fas, write.phy, write.nex, read.fas,
+           descendants, sister, noi, fixNodes,
+           tipHeights, terminal.clades)
+import(methods)
+importFrom(RPostgreSQL, PostgreSQL, dbConnect, 
+           dbDisconnect, dbSendQuery, dbGetQuery, 
+           dbWriteTable, dbReadTable, dbExistsTable, dbRemoveTable)
+importFrom(seqinr, comp, c2s, s2c)
+import(snowfall)
+import(XML)
